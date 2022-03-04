@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="level1">Что больше?\n</string>
+    <string name="leveloneEnd">Харош, ты осилил нагрузку первого класса!\n</string>
+
 </resources>
