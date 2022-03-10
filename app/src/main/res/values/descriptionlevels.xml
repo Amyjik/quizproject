@@ -2,5 +2,6 @@
 <resources>
     <string name="level1">Что больше?\n</string>
     <string name="leveloneEnd">Харош, ты осилил нагрузку первого класса!\n</string>
+    <string name="Level2">Реши, чтобы выжить!</string>
 
 </resources>

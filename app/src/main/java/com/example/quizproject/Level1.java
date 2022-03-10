@@ -22,6 +22,7 @@ import java.util.Random;
 public class Level1 extends AppCompatActivity {
 
     Dialog dialog;
+    Dialog dialogEnd;
 
     public int numLeft;
     public int numRight;
@@ -53,6 +54,7 @@ public class Level1 extends AppCompatActivity {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.previewdialog);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         dialog.setCancelable(false);
 
         TextView btnclose = (TextView)dialog.findViewById(R.id.btnclose);
@@ -79,6 +81,48 @@ public class Level1 extends AppCompatActivity {
         });
 
         dialog.show();
+
+        //______________________________________________________________________________________________________________________________________________________________
+        dialogEnd = new Dialog(this);
+        dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialogEnd.setContentView(R.layout.dialogend);
+        dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        dialogEnd.setCancelable(false);
+
+        TextView btnclose2 = (TextView)dialogEnd.findViewById(R.id.btnclose);
+        btnclose2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Level1.this, GameLevels.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+
+                }
+                dialogEnd.dismiss();
+            }
+        });
+
+        Button btncontinue2 = (Button)dialogEnd.findViewById(R.id.btncontinue);
+        btncontinue2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(Level1.this, Level2.class);
+                    startActivity(intent);
+                    finish();
+                } catch(Exception e) {
+
+                }
+                dialogEnd.dismiss();
+            }
+        });
+
+
+        //______________________________________________________________________________________________________________________________________________________________
 
         Button btn_back = (Button)findViewById(R.id.button_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -161,7 +205,7 @@ public class Level1 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-
+                        dialogEnd.show();
                     } else{
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);
@@ -233,7 +277,7 @@ public class Level1 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-
+                        dialogEnd.show();
                     } else{
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);

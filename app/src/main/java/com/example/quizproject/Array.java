@@ -29,5 +29,13 @@ public class Array {
             R.string.lvl1text9
     };
 
+    final int[] znaki = {
+      R.drawable.plus,
+      R.drawable.minus,
+      R.drawable.mult,
+    };
+
+
+
 
 }
