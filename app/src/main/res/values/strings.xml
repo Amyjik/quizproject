@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">quizproject</string>
+    <string name="app_name">QuizGame</string>
     <string name="start">СТАРТ</string>
     <string name="back">НАЗАД</string>
     <string name="level">Уровень:</string>
     <string name="levelone">Уровень 1</string>
-    <string name="leveltwo">Уровень</string>
+    <string name="leveltwo">Уровень 2</string>
     <string name="textcontinue">Продолжить</string>
 
 

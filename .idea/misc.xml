@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.268" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/button_gamelevels.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/button_stroke_black95_press_white.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/button_stroke_white_press_blue.xml" value="0.1025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.268" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/style_btn_black60.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/style_btn_black95.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/drawable/style_btn_stroke_black95.xml" value="0.144" />
@@ -23,6 +25,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/layout/previewdialog.xml" value="0.5148809523809523" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/layout/universal.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/layout/universal2.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quizproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.268" />
       </map>
     </option>
   </component>

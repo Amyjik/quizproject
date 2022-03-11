@@ -30,9 +30,24 @@ public class Array {
     };
 
     final int[] znaki = {
-      R.drawable.plus,
-      R.drawable.minus,
-      R.drawable.mult,
+      R.drawable.plussmall,
+      R.drawable.minussmall,
+      R.drawable.multsmall,
+    };
+
+    final int[] smallnum = {
+            R.drawable.nullsmall,
+            R.drawable.onesmall,
+            R.drawable.twosmall,
+            R.drawable.threesmall,
+            R.drawable.foursmall,
+            R.drawable.fivesmall,
+            R.drawable.sixsmall,
+            R.drawable.sevensmall,
+            R.drawable.eightsmall,
+            R.drawable.ninesmall,
+
+
     };
 
 
