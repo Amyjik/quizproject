@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="level1">Что больше?\n</string>
-    <string name="leveloneEnd">Харош, ты осилил нагрузку первого класса!\n</string>
+    <string name="leveloneEnd">Математика - царица наук, арифметика – царица математики (Карл Фридрих Гаусс)\n</string>
     <string name="Level2">Реши, чтобы выжить!</string>
-
+    <string name="leveltwoEnd">Нельзя быть математиком, не будучи в то же время и поэтом в душе (Софья Ковалевская)\n</string>
+    <string name="Level3">Проверка знаний по географии! Простенькие задачки.</string>
+    <string name="levelthreeEnd">Если бы люди не путешествовали, как бы они узнали о красоте и величии мира? (Русский путешественник И.Д. Черский)\n</string>
 </resources>

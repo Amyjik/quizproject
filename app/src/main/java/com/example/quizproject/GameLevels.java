@@ -63,6 +63,21 @@ public class GameLevels extends AppCompatActivity {
         }));
         //переход на 2 лвл - конец
 
+        //переход на 3 лвл - начало
+        TextView textView3 = (TextView) findViewById(R.id.textView3);
+        textView3.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level3.class);
+                    startActivity(intent);finish();
+                } catch(Exception e) {
+
+                }
+            }
+        }));
+        //переход на 3 лвл - конец
+
     }
 
     @Override

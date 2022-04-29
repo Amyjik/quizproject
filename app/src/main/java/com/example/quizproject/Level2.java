@@ -24,7 +24,7 @@ public class Level2 extends AppCompatActivity {
 
 
     Dialog dialog;
-    Dialog dialogEnd;
+    Dialog dialogEnd2;
 
     public int numLeft1 = 0;
     public int numLeft2 = 0;
@@ -141,14 +141,14 @@ public class Level2 extends AppCompatActivity {
         dialog.show();
 
         //______________________________________________________________________________________________________________________________________________________________
-        dialogEnd = new Dialog(this);
-        dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialogEnd.setContentView(R.layout.dialogend);
-        dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-        dialogEnd.setCancelable(false);
+        dialogEnd2 = new Dialog(this);
+        dialogEnd2.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialogEnd2.setContentView(R.layout.dialogend2);
+        dialogEnd2.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialogEnd2.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        dialogEnd2.setCancelable(false);
 
-        TextView btnclose2 = (TextView) dialogEnd.findViewById(R.id.btnclose);
+        TextView btnclose2 = (TextView) dialogEnd2.findViewById(R.id.btnclose);
         btnclose2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -159,11 +159,11 @@ public class Level2 extends AppCompatActivity {
                 } catch (Exception e) {
 
                 }
-                dialogEnd.dismiss();
+                dialogEnd2.dismiss();
             }
         });
 
-        Button btncontinue2 = (Button) dialogEnd.findViewById(R.id.btncontinue);
+        Button btncontinue2 = (Button) dialogEnd2.findViewById(R.id.btncontinue);
         btncontinue2.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -175,7 +175,7 @@ public class Level2 extends AppCompatActivity {
                 } catch (Exception e) {
 
                 }
-                dialogEnd.dismiss();
+                dialogEnd2.dismiss();
             }
         });
 
@@ -400,7 +400,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -607,7 +607,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -814,7 +814,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1021,7 +1021,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1231,7 +1231,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1438,7 +1438,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1645,7 +1645,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1852,7 +1852,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2062,7 +2062,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2269,7 +2269,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2476,7 +2476,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2683,7 +2683,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2893,7 +2893,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3100,7 +3100,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3307,7 +3307,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3514,7 +3514,7 @@ public class Level2 extends AppCompatActivity {
                         }
                     }
                     if(count == 20) {
-                        dialogEnd.show();
+                        dialogEnd2.show();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);

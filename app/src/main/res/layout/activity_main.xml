@@ -21,6 +21,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/logoquizgame" />
 
+
+
+
     <LinearLayout
         android:id="@+id/startLayout"
         android:layout_width="wrap_content"
