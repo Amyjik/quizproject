@@ -169,7 +169,7 @@ public class Level2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(com.example.quizproject.Level2.this, Level2.class);
+                    Intent intent = new Intent(com.example.quizproject.Level2.this, Level3.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {

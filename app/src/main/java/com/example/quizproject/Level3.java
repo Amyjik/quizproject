@@ -152,63 +152,20 @@ public class Level3 extends AppCompatActivity {
 
         final Animation a = AnimationUtils.loadAnimation(Level3.this, R.anim.alpha);
 
-        country = flag.nextInt(15);
-        if(country == 0) {
-            trueans = 0;
-        }
-        if(country == 1) {
-            trueans = 1;
-        }
-        if(country == 2) {
-            trueans = 2;
-        }
-        if(country == 3) {
-            trueans = 3;
-        }
-        if(country == 4) {
-            trueans = 4;
-        }
-        if(country == 5) {
-            trueans = 5;
-        }
-        if(country == 6) {
-            trueans = 6;
-        }
-        if(country == 7) {
-            trueans = 7;
-        }
-        if(country == 8) {
-            trueans = 8;
-        }
-        if(country == 9) {
-            trueans = 9;
-        }
-        if(country == 10) {
-            trueans = 10;
-        }
-        if(country == 11) {
-            trueans = 11;
-        }
-        if(country == 12) {
-            trueans = 12;
-        }
-        if(country == 13) {
-            trueans = 13;
-        }
-        if(country == 14) {
-            trueans = 14;
-        }
-        falseans1 = flag.nextInt(15);
+        country = flag.nextInt(43);
+
+        trueans = country;
+        falseans1 = flag.nextInt(43);
         while(falseans1 == trueans) {
-            falseans1 = flag.nextInt(15);
+            falseans1 = flag.nextInt(43);
         }
-        falseans2 = flag.nextInt(15);
+        falseans2 = flag.nextInt(43);
         while((falseans2 == trueans) || (falseans2 == falseans1)) {
-            falseans2 = flag.nextInt(15);
+            falseans2 = flag.nextInt(43);
         }
-        falseans3 = flag.nextInt(15);
+        falseans3 = flag.nextInt(43);
         while((falseans3 == trueans) || ((falseans3 == falseans2) || (falseans3 == falseans1))) {
-            falseans3 = flag.nextInt(15);
+            falseans3 = flag.nextInt(43);
         }
         rightAns = c.nextInt(4);
 
@@ -283,63 +240,19 @@ public class Level3 extends AppCompatActivity {
                     if(count == 5) {
                         dialogEnd3.show();
                     } else{
-                        country = flag.nextInt(15);
-                        if(country == 0) {
-                            trueans = 0;
-                        }
-                        if(country == 1) {
-                            trueans = 1;
-                        }
-                        if(country == 2) {
-                            trueans = 2;
-                        }
-                        if(country == 3) {
-                            trueans = 3;
-                        }
-                        if(country == 4) {
-                            trueans = 4;
-                        }
-                        if(country == 5) {
-                            trueans = 5;
-                        }
-                        if(country == 6) {
-                            trueans = 6;
-                        }
-                        if(country == 7) {
-                            trueans = 7;
-                        }
-                        if(country == 8) {
-                            trueans = 8;
-                        }
-                        if(country == 9) {
-                            trueans = 9;
-                        }
-                        if(country == 10) {
-                            trueans = 10;
-                        }
-                        if(country == 11) {
-                            trueans = 11;
-                        }
-                        if(country == 12) {
-                            trueans = 12;
-                        }
-                        if(country == 13) {
-                            trueans = 13;
-                        }
-                        if(country == 14) {
-                            trueans = 14;
-                        }
-                        falseans1 = flag.nextInt(15);
+                        country = flag.nextInt(43);
+                        trueans = country;
+                        falseans1 = flag.nextInt(43);
                         while(falseans1 == trueans) {
-                            falseans1 = flag.nextInt(15);
+                            falseans1 = flag.nextInt(43);
                         }
-                        falseans2 = flag.nextInt(15);
+                        falseans2 = flag.nextInt(43);
                         while((falseans2 == trueans) || (falseans2 == falseans1)) {
-                            falseans2 = flag.nextInt(15);
+                            falseans2 = flag.nextInt(43);
                         }
-                        falseans3 = flag.nextInt(15);
+                        falseans3 = flag.nextInt(43);
                         while((falseans3 == trueans) || ((falseans3 == falseans2) || (falseans3 == falseans1))) {
-                            falseans3 = flag.nextInt(15);
+                            falseans3 = flag.nextInt(43);
                         }
                         rightAns = c.nextInt(4);
 
@@ -425,63 +338,19 @@ public class Level3 extends AppCompatActivity {
                     if(count == 5) {
                         dialogEnd3.show();
                     } else{
-                        country = flag.nextInt(15);
-                        if(country == 0) {
-                            trueans = 0;
-                        }
-                        if(country == 1) {
-                            trueans = 1;
-                        }
-                        if(country == 2) {
-                            trueans = 2;
-                        }
-                        if(country == 3) {
-                            trueans = 3;
-                        }
-                        if(country == 4) {
-                            trueans = 4;
-                        }
-                        if(country == 5) {
-                            trueans = 5;
-                        }
-                        if(country == 6) {
-                            trueans = 6;
-                        }
-                        if(country == 7) {
-                            trueans = 7;
-                        }
-                        if(country == 8) {
-                            trueans = 8;
-                        }
-                        if(country == 9) {
-                            trueans = 9;
-                        }
-                        if(country == 10) {
-                            trueans = 10;
-                        }
-                        if(country == 11) {
-                            trueans = 11;
-                        }
-                        if(country == 12) {
-                            trueans = 12;
-                        }
-                        if(country == 13) {
-                            trueans = 13;
-                        }
-                        if(country == 14) {
-                            trueans = 14;
-                        }
-                        falseans1 = flag.nextInt(15);
+                        country = flag.nextInt(43);
+                        trueans = country;
+                        falseans1 = flag.nextInt(43);
                         while(falseans1 == trueans) {
-                            falseans1 = flag.nextInt(15);
+                            falseans1 = flag.nextInt(43);
                         }
-                        falseans2 = flag.nextInt(15);
+                        falseans2 = flag.nextInt(43);
                         while((falseans2 == trueans) || (falseans2 == falseans1)) {
-                            falseans2 = flag.nextInt(15);
+                            falseans2 = flag.nextInt(43);
                         }
-                        falseans3 = flag.nextInt(15);
+                        falseans3 = flag.nextInt(43);
                         while((falseans3 == trueans) || ((falseans3 == falseans2) || (falseans3 == falseans1))) {
-                            falseans3 = flag.nextInt(15);
+                            falseans3 = flag.nextInt(43);
                         }
                         rightAns = c.nextInt(4);
 
@@ -566,63 +435,19 @@ public class Level3 extends AppCompatActivity {
                     if(count == 5) {
                         dialogEnd3.show();
                     } else{
-                        country = flag.nextInt(15);
-                        if(country == 0) {
-                            trueans = 0;
-                        }
-                        if(country == 1) {
-                            trueans = 1;
-                        }
-                        if(country == 2) {
-                            trueans = 2;
-                        }
-                        if(country == 3) {
-                            trueans = 3;
-                        }
-                        if(country == 4) {
-                            trueans = 4;
-                        }
-                        if(country == 5) {
-                            trueans = 5;
-                        }
-                        if(country == 6) {
-                            trueans = 6;
-                        }
-                        if(country == 7) {
-                            trueans = 7;
-                        }
-                        if(country == 8) {
-                            trueans = 8;
-                        }
-                        if(country == 9) {
-                            trueans = 9;
-                        }
-                        if(country == 10) {
-                            trueans = 10;
-                        }
-                        if(country == 11) {
-                            trueans = 11;
-                        }
-                        if(country == 12) {
-                            trueans = 12;
-                        }
-                        if(country == 13) {
-                            trueans = 13;
-                        }
-                        if(country == 14) {
-                            trueans = 14;
-                        }
-                        falseans1 = flag.nextInt(15);
+                        country = flag.nextInt(43);
+                        trueans = country;
+                        falseans1 = flag.nextInt(43);
                         while(falseans1 == trueans) {
-                            falseans1 = flag.nextInt(15);
+                            falseans1 = flag.nextInt(43);
                         }
-                        falseans2 = flag.nextInt(15);
+                        falseans2 = flag.nextInt(43);
                         while((falseans2 == trueans) || (falseans2 == falseans1)) {
-                            falseans2 = flag.nextInt(15);
+                            falseans2 = flag.nextInt(43);
                         }
-                        falseans3 = flag.nextInt(15);
+                        falseans3 = flag.nextInt(43);
                         while((falseans3 == trueans) || ((falseans3 == falseans2) || (falseans3 == falseans1))) {
-                            falseans3 = flag.nextInt(15);
+                            falseans3 = flag.nextInt(43);
                         }
                         rightAns = c.nextInt(4);
 
@@ -707,63 +532,19 @@ public class Level3 extends AppCompatActivity {
                     if(count == 5) {
                         dialogEnd3.show();
                     } else{
-                        country = flag.nextInt(15);
-                        if(country == 0) {
-                            trueans = 0;
-                        }
-                        if(country == 1) {
-                            trueans = 1;
-                        }
-                        if(country == 2) {
-                            trueans = 2;
-                        }
-                        if(country == 3) {
-                            trueans = 3;
-                        }
-                        if(country == 4) {
-                            trueans = 4;
-                        }
-                        if(country == 5) {
-                            trueans = 5;
-                        }
-                        if(country == 6) {
-                            trueans = 6;
-                        }
-                        if(country == 7) {
-                            trueans = 7;
-                        }
-                        if(country == 8) {
-                            trueans = 8;
-                        }
-                        if(country == 9) {
-                            trueans = 9;
-                        }
-                        if(country == 10) {
-                            trueans = 10;
-                        }
-                        if(country == 11) {
-                            trueans = 11;
-                        }
-                        if(country == 12) {
-                            trueans = 12;
-                        }
-                        if(country == 13) {
-                            trueans = 13;
-                        }
-                        if(country == 14) {
-                            trueans = 14;
-                        }
-                        falseans1 = flag.nextInt(15);
+                        country = flag.nextInt(43);
+                        trueans = country;
+                        falseans1 = flag.nextInt(43);
                         while(falseans1 == trueans) {
-                            falseans1 = flag.nextInt(15);
+                            falseans1 = flag.nextInt(43);
                         }
-                        falseans2 = flag.nextInt(15);
+                        falseans2 = flag.nextInt(43);
                         while((falseans2 == trueans) || (falseans2 == falseans1)) {
-                            falseans2 = flag.nextInt(15);
+                            falseans2 = flag.nextInt(43);
                         }
-                        falseans3 = flag.nextInt(15);
+                        falseans3 = flag.nextInt(43);
                         while((falseans3 == trueans) || ((falseans3 == falseans2) || (falseans3 == falseans1))) {
-                            falseans3 = flag.nextInt(15);
+                            falseans3 = flag.nextInt(43);
                         }
                         rightAns = c.nextInt(4);
 
