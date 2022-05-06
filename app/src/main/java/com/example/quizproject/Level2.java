@@ -214,7 +214,7 @@ public class Level2 extends AppCompatActivity {
 
             znak1 = znak.nextInt(3);
             img_znak1.setImageResource(array.znaki[znak1]);
-            //вывод примера на экран - конец
+
 
             while (((numLeft1 * 10 + numLeft2) < (numRight1 * 10 + numRight2)) && (znak1 == 1)) {
                 numLeft1 = a1.nextInt(10);
@@ -226,6 +226,8 @@ public class Level2 extends AppCompatActivity {
             img_left2.setImageResource(array.smallnum[numLeft2]);
             img_right1.setImageResource(array.smallnum[numRight1]);
             img_right2.setImageResource(array.smallnum[numRight2]);
+
+            //вывод примера на экран - конец
 
             rightAns = trueAns.nextInt(4);
 
