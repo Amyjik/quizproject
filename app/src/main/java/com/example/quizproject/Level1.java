@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -29,11 +30,16 @@ public class Level1 extends AppCompatActivity {
     Array array = new Array();
     Random random = new Random();
     public int count = 0;
+    private MediaPlayer sound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+        sound = MediaPlayer.create(this, R.raw.rammstein1);
+
+        soundPlayButton(sound);
 
         TextView text_levels = findViewById(R.id.text_levels);
         text_levels.setText(R.string.levelone);
@@ -94,6 +100,7 @@ public class Level1 extends AppCompatActivity {
         btnclose2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(Level1.this, GameLevels.class);
                     startActivity(intent);
@@ -126,8 +133,10 @@ public class Level1 extends AppCompatActivity {
 
         Button btn_back = (Button)findViewById(R.id.button_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(Level1.this, GameLevels.class);
                     startActivity(intent);
@@ -206,6 +215,7 @@ public class Level1 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd.show();
+                        sound.stop();
                     } else{
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);
@@ -278,6 +288,7 @@ public class Level1 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd.show();
+                        sound.stop();
                     } else{
                         numLeft = random.nextInt(10);
                         img_left.setImageResource(array.images1[numLeft]);
@@ -305,8 +316,18 @@ public class Level1 extends AppCompatActivity {
 
     }
 
+    private void soundPlayButton(MediaPlayer sound) {
+        if(sound.isPlaying()) {
+            sound.stop();
+        }
+        sound.start();
+        sound.setLooping(true);
+        sound.seekTo(10000);
+    }
+
     @Override
     public void onBackPressed(){
+        sound.stop();
         try {
             Intent intent = new Intent(Level1.this, GameLevels.class);
             startActivity(intent);

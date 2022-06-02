@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -47,11 +48,16 @@ public class Level2 extends AppCompatActivity {
     Random ans4 = new Random();
     Random trueAns = new Random();
     public int count = 0;
+    private MediaPlayer sound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal2);
+
+        sound = MediaPlayer.create(this, R.raw.rammstein1);
+
+        soundPlayButton(sound);
 
         TextView text_levels = findViewById(R.id.text_levels);
         text_levels.setText(R.string.leveltwo);
@@ -119,6 +125,7 @@ public class Level2 extends AppCompatActivity {
         btnclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(com.example.quizproject.Level2.this, GameLevels.class);
                     startActivity(intent);
@@ -152,6 +159,7 @@ public class Level2 extends AppCompatActivity {
         btnclose2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(com.example.quizproject.Level2.this, GameLevels.class);
                     startActivity(intent);
@@ -186,6 +194,7 @@ public class Level2 extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(com.example.quizproject.Level2.this, GameLevels.class);
                     startActivity(intent);
@@ -403,6 +412,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -610,6 +620,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -817,6 +828,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1024,6 +1036,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1234,6 +1247,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1441,6 +1455,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1648,6 +1663,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -1855,6 +1871,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2065,6 +2082,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2272,6 +2290,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2479,6 +2498,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2686,6 +2706,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -2896,6 +2917,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3103,6 +3125,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3310,6 +3333,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3517,6 +3541,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if(count == 20) {
                         dialogEnd2.show();
+                        sound.stop();
                     } else{
                         numLeft1 = a1.nextInt(10);
                         numLeft2 = a2.nextInt(10);
@@ -3663,6 +3688,26 @@ public class Level2 extends AppCompatActivity {
             //четвертая кнопка - конец
 
         }
+
+    private void soundPlayButton(MediaPlayer sound) {
+        if(sound.isPlaying()) {
+            sound.stop();
+        }
+        sound.start();
+        sound.setLooping(true);
+        sound.seekTo(10000);
+    }
+
+
+    public void onBackPressed(){
+        try {
+            Intent intent = new Intent(Level2.this, GameLevels.class);
+            startActivity(intent);
+            finish();
+        } catch(Exception e) {
+
+        }
+    }
 
 
 }

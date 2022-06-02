@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -36,10 +37,16 @@ public class Level3 extends AppCompatActivity {
     Random ans2 = new Random();
     Random ans3 = new Random();
     Random c = new Random();
+    private MediaPlayer sound;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal3);
+
+        sound = MediaPlayer.create(this, R.raw.rammstein1);
+
+        soundPlayButton(sound);
 
         TextView text_levels = findViewById(R.id.text_levels);
         text_levels.setText(R.string.levelthree);
@@ -100,6 +107,7 @@ public class Level3 extends AppCompatActivity {
         btnclose2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(Level3.this, GameLevels.class);
                     startActivity(intent);
@@ -134,6 +142,7 @@ public class Level3 extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                sound.stop();
                 try {
                     Intent intent = new Intent(Level3.this, GameLevels.class);
                     startActivity(intent);
@@ -239,6 +248,7 @@ public class Level3 extends AppCompatActivity {
                     }
                     if(count == 5) {
                         dialogEnd3.show();
+                        sound.stop();
                     } else{
                         country = flag.nextInt(43);
                         trueans = country;
@@ -337,6 +347,7 @@ public class Level3 extends AppCompatActivity {
                     }
                     if(count == 5) {
                         dialogEnd3.show();
+                        sound.stop();
                     } else{
                         country = flag.nextInt(43);
                         trueans = country;
@@ -434,6 +445,7 @@ public class Level3 extends AppCompatActivity {
                     }
                     if(count == 5) {
                         dialogEnd3.show();
+                        sound.stop();
                     } else{
                         country = flag.nextInt(43);
                         trueans = country;
@@ -531,6 +543,7 @@ public class Level3 extends AppCompatActivity {
                     }
                     if(count == 5) {
                         dialogEnd3.show();
+                        sound.stop();
                     } else{
                         country = flag.nextInt(43);
                         trueans = country;
@@ -588,8 +601,19 @@ public class Level3 extends AppCompatActivity {
         //обработка кнопки 4 - конец
     }
 
+    private void soundPlayButton(MediaPlayer sound) {
+        if(sound.isPlaying()) {
+            sound.stop();
+        }
+        sound.start();
+        sound.setLooping(true);
+        sound.seekTo(10000);
+    }
+
+
     @Override
     public void onBackPressed(){
+
         try {
             Intent intent = new Intent(Level3.this, GameLevels.class);
             startActivity(intent);
